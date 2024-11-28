@@ -15,10 +15,10 @@ const Header: React.FC = () => {
       <SearchBar />
       <HeaderNavBar>
         <NavLink to={'/'}>Louer mon logement</NavLink>
-        <NavLink to={'/'}>
+        <NavLink to={'/'} role={'lang'}>
           <TbWorld />
         </NavLink>
-        <NavLink to={'/'}>
+        <NavLink to={'/'} role={'login'}>
           <FiUsers />
         </NavLink>
       </HeaderNavBar>
