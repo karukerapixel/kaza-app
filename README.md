@@ -1,5 +1,4 @@
-# Housing Application
-
+# Kaza Application
 This is a React application designed to display housing information dynamically using modern React features like functional components, hooks, and routing. The app includes a carousel, dropdowns, ratings, and a fully responsive UI.
 
 ## Features
@@ -21,7 +20,7 @@ Ensure you have the following installed on your system:
 ## Installation
 1. Clone the repository:
 git clone https://github.com/your-username/kaza-app.git
-cd housing-app
+cd kaza-app
 
 2. Install dependencies:
 npm install
@@ -76,4 +75,5 @@ git push origin branch-name
 - Jest
 - React Testing Library
 
+###
 Feel free to adjust the repository URL or any specific details. Once uploaded, your project will be cleanly documented for anyone who views it!
