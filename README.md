@@ -1,8 +1,8 @@
-### Housing Application
+# Housing Application
 
 This is a React application designed to display housing information dynamically using modern React features like functional components, hooks, and routing. The app includes a carousel, dropdowns, ratings, and a fully responsive UI.
 
-# Features
+## Features
 - Carousel: Displays images of the housing with navigation controls.
 - Dropdowns: Expands and collapses to show additional details (description, equipment).
 - Dynamic Ratings: Displays a star-based rating system based on the housing score.
@@ -10,15 +10,15 @@ This is a React application designed to display housing information dynamically 
 - Responsive Design: Styled using modern techniques for a seamless experience on all devices.
 
 
-## Getting Started
+# Getting Started
 Follow these steps to set up and run the application locally.
 
-# Prerequisites
+## Prerequisites
 Ensure you have the following installed on your system:
 - Node.js (v14 or higher)
 - npm or yarn
 
-# Installation
+## Installation
 1. Clone the repository:
 git clone https://github.com/your-username/kaza-app.git
 cd housing-app
@@ -27,7 +27,7 @@ cd housing-app
 npm install
 yarn add
 
-# Running the Application
+## Running the Application
 To start the application in development mode:
 - npm start
 - yarn start
