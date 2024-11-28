@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+### Housing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application designed to display housing information dynamically using modern React features like functional components, hooks, and routing. The app includes a carousel, dropdowns, ratings, and a fully responsive UI.
 
-## Available Scripts
+# Features
+- Carousel: Displays images of the housing with navigation controls.
+- Dropdowns: Expands and collapses to show additional details (description, equipment).
+- Dynamic Ratings: Displays a star-based rating system based on the housing score.
+- Routing: Uses React Router to handle dynamic routes for each housing.
+- Responsive Design: Styled using modern techniques for a seamless experience on all devices.
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
+Follow these steps to set up and run the application locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Prerequisites
+Ensure you have the following installed on your system:
+- Node.js (v14 or higher)
+- npm or yarn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Installation
+1. Clone the repository:
+git clone https://github.com/your-username/kaza-app.git
+cd housing-app
 
-### `npm test`
+2. Install dependencies:
+npm install
+yarn add
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Running the Application
+To start the application in development mode:
+- npm start
+- yarn start
+The app will be available at http://localhost:3000.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+src/
+├── components/          # Reusable React components (Carousel, Dropdown, Rating)
+├── data/                # Static JSON data for housings
+├── pages/               # Page-level components (Housing)
+├── styles/              # Styled-components and global styles
+├── App.tsx              # Main app component
+└── index.tsx            # Entry point of the application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Scripts
+Available npm scripts:
+- npm start: Runs the app in development mode.
+- npm test: Runs tests using Jest and React Testing Library.
+- npm run build: Builds the app for production.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
+Contributions are welcome! If you find bugs or have feature requests, feel free to open an issue or submit a pull request.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Create a new branch:
+git checkout -b branch-name
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Make your changes and commit:
+git commit -m "add your message"
 
-## Learn More
+4. Push your changes:
+git push origin branch-name
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Acknowledgments
+- React
+- TypeScript
+- React Router
+- Styled Components
+- Jest
+- React Testing Library
+
+Feel free to adjust the repository URL or any specific details. Once uploaded, your project will be cleanly documented for anyone who views it!
