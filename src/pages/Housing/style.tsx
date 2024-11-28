@@ -5,34 +5,6 @@ export const HousingContainer = styled.section`
   display: flex;
   justify-content: space-between;
   margin: 24px 0;
-
-  > div {
-    > h2 {
-      font-size: 2rem;
-    }
-
-    > p {
-      margin-bottom: 12px;
-    }
-
-    > ul {
-      display: flex;
-      gap: 12px;
-
-      > li {
-        color: ${({ theme }) => theme.colors.white};
-        background-color: ${({ theme }) => theme.colors.primary};
-        border-radius: 5px;
-        padding: 5px 10px;
-      }
-    }
-
-    > img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-  }
 `;
 
 export const HousingBloc = styled.div`
