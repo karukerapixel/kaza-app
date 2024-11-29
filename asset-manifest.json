@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/kaza-app/static/js/main.88b90fee.js",
+    "main.js": "/kaza-app/static/js/main.54484669.js",
     "index.html": "/kaza-app/index.html",
-    "main.88b90fee.js.map": "/kaza-app/static/js/main.88b90fee.js.map"
+    "main.54484669.js.map": "/kaza-app/static/js/main.54484669.js.map"
   },
   "entrypoints": [
-    "static/js/main.88b90fee.js"
+    "static/js/main.54484669.js"
   ]
 }
