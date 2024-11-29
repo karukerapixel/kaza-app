@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import StyledProvider from './contexts/StyledContext';
 import App from './App';
 
@@ -10,14 +10,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <StyledProvider>
-      <BrowserRouter
+      <HashRouter
         future={{
           v7_startTransition: true,
           v7_relativeSplatPath: true,
         }}
       >
-        <App />
-      </BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </HashRouter>
     </StyledProvider>
   </React.StrictMode>
 );
