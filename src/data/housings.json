@@ -24,7 +24,42 @@
       "Frigo",
       "WIFI"
     ],
-    "tags": ["Batignolle", "Montmartre"]
+    "tags": [
+      "Batignolle",
+      "Montmartre"
+    ],
+    "price_per_night": 143,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "Alice Petit",
+        "rating": 3,
+        "comment": "Propre et bien équipé, je recommande !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 43,
+    "bedrooms": 1,
+    "beds": 3,
+    "bathrooms": 1
   },
   {
     "id": "b9123946",
@@ -53,7 +88,40 @@
       "Cuisine équipée",
       "Télévision"
     ],
-    "tags": ["Canal Saint Martin", "République", "Appartement"]
+    "tags": [
+      "Canal Saint Martin",
+      "République",
+      "Appartement"
+    ],
+    "price_per_night": 149,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Marc Leclerc",
+        "rating": 5,
+        "comment": "L'hôte est très accueillant et le logement est magnifique."
+      },
+      {
+        "user": "Marc Leclerc",
+        "rating": 4,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 93,
+    "bedrooms": 1,
+    "beds": 4,
+    "bathrooms": 2
   },
   {
     "id": "46d188c5",
@@ -72,8 +140,44 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 20e",
-    "equipments": ["Wi-fi", "Cuisine équipée", "Télévision", "Sèche Cheveux"],
-    "tags": ["Buttes Chaumont", "Laumière", "Studio"]
+    "equipments": [
+      "Wi-fi",
+      "Cuisine équipée",
+      "Télévision",
+      "Sèche Cheveux"
+    ],
+    "tags": [
+      "Buttes Chaumont",
+      "Laumière",
+      "Studio"
+    ],
+    "price_per_night": 158,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Propre et bien équipé, je recommande !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 69,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 1
   },
   {
     "id": "7af00cd6",
@@ -99,7 +203,39 @@
       "Climatisation",
       "Télévision"
     ],
-    "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
+    "tags": [
+      "Parmentier",
+      "Marais",
+      "Parc",
+      "Night Life"
+    ],
+    "price_per_night": 111,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Camille Dupont",
+        "rating": 4,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 64,
+    "bedrooms": 3,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "0979876d",
@@ -127,7 +263,34 @@
       "Chambre Séparée",
       "Parking"
     ],
-    "tags": ["Goncourt", "Proche commerces"]
+    "tags": [
+      "Goncourt",
+      "Proche commerces"
+    ],
+    "price_per_night": 175,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 4,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 20,
+    "bedrooms": 3,
+    "beds": 1,
+    "bathrooms": 1
   },
   {
     "id": "f72a452f",
@@ -147,8 +310,42 @@
     },
     "rating": "5",
     "location": "Ile de France - Paris 18e",
-    "equipments": ["Chambre Séparée", "Parking"],
-    "tags": ["Montmartre", "Culture", "Charme"]
+    "equipments": [
+      "Chambre Séparée",
+      "Parking"
+    ],
+    "tags": [
+      "Montmartre",
+      "Culture",
+      "Charme"
+    ],
+    "price_per_night": 282,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Marc Leclerc",
+        "rating": 4,
+        "comment": "Propre et bien équipé, je recommande !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 22,
+    "bedrooms": 2,
+    "beds": 1,
+    "bathrooms": 1
   },
   {
     "id": "b4c67936",
@@ -175,7 +372,35 @@
       "Bureau",
       "Parking"
     ],
-    "tags": ["Transports", "Cheap", "18ème"]
+    "tags": [
+      "Transports",
+      "Cheap",
+      "18ème"
+    ],
+    "price_per_night": 144,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-08",
+      "2024-12-15",
+      "2024-12-22",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Camille Dupont",
+        "rating": 5,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 23,
+    "bedrooms": 2,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "bc6f7112",
@@ -204,7 +429,39 @@
       "Lit King Size",
       "Ascenseur"
     ],
-    "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"]
+    "tags": [
+      "Luxe",
+      "Tour Eiffel",
+      "T3",
+      "6ème"
+    ],
+    "price_per_night": 141,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "John Smith",
+        "rating": 3,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 107,
+    "bedrooms": 2,
+    "beds": 4,
+    "bathrooms": 1
   },
   {
     "id": "cb2f9222",
@@ -231,7 +488,43 @@
       "Wi-fi",
       "Parking"
     ],
-    "tags": ["Montparnasse", "Commerces", "Famille"]
+    "tags": [
+      "Montparnasse",
+      "Commerces",
+      "Famille"
+    ],
+    "price_per_night": 174,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-05",
+      "2024-12-09",
+      "2024-12-13",
+      "2024-12-17",
+      "2024-12-21",
+      "2024-12-25",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "John Smith",
+        "rating": 3,
+        "comment": "L'hôte est très accueillant et le logement est magnifique."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 21,
+    "bedrooms": 3,
+    "beds": 2,
+    "bathrooms": 1
   },
   {
     "id": "d60ca600",
@@ -258,7 +551,36 @@
       "Wi-fi",
       "Ascenseur"
     ],
-    "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"]
+    "tags": [
+      "Père Lachaise",
+      "11e",
+      "Metro 3",
+      "Metro 2"
+    ],
+    "price_per_night": 118,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-08",
+      "2024-12-15",
+      "2024-12-22",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 3,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 103,
+    "bedrooms": 2,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "2cf259e1",
@@ -277,8 +599,51 @@
     },
     "rating": "4",
     "location": "Ile de France - Paris 11e",
-    "equipments": ["Clic-clac", "Four", "Sèche Cheveux", "Wi-fi"],
-    "tags": ["Marais", "Studio", "Parc"]
+    "equipments": [
+      "Clic-clac",
+      "Four",
+      "Sèche Cheveux",
+      "Wi-fi"
+    ],
+    "tags": [
+      "Marais",
+      "Studio",
+      "Parc"
+    ],
+    "price_per_night": 236,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "John Smith",
+        "rating": 5,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      },
+      {
+        "user": "John Smith",
+        "rating": 4,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "Camille Dupont",
+        "rating": 5,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 38,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 2
   },
   {
     "id": "5323c29b",
@@ -305,7 +670,47 @@
       "TV",
       "Bouilloire"
     ],
-    "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"]
+    "tags": [
+      "Marais",
+      "République",
+      "Studio",
+      "Proche Métros",
+      "Commerces"
+    ],
+    "price_per_night": 126,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-08",
+      "2024-12-15",
+      "2024-12-22",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 4,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "Sarah Bernard",
+        "rating": 5,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "John Smith",
+        "rating": 3,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 22,
+    "bedrooms": 1,
+    "beds": 2,
+    "bathrooms": 2
   },
   {
     "id": "af6d2d48",
@@ -332,7 +737,45 @@
       "Frigo",
       "Bouilloire"
     ],
-    "tags": ["Forêt", "Nature", "Musée d'Ecouen"]
+    "tags": [
+      "Forêt",
+      "Nature",
+      "Musée d'Ecouen"
+    ],
+    "price_per_night": 248,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 3,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      },
+      {
+        "user": "John Smith",
+        "rating": 4,
+        "comment": "Propre et bien équipé, je recommande !"
+      },
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 115,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "7cbb378e",
@@ -362,7 +805,45 @@
       "Cintres",
       "Équipements de base"
     ],
-    "tags": ["Forêt", "Nature", "Grande maison"]
+    "tags": [
+      "Forêt",
+      "Nature",
+      "Grande maison"
+    ],
+    "price_per_night": 179,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-04",
+      "2024-12-07",
+      "2024-12-10",
+      "2024-12-13",
+      "2024-12-16",
+      "2024-12-19",
+      "2024-12-22",
+      "2024-12-25",
+      "2024-12-28"
+    ],
+    "reviews": [
+      {
+        "user": "Marc Leclerc",
+        "rating": 5,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      },
+      {
+        "user": "Camille Dupont",
+        "rating": 4,
+        "comment": "L'hôte est très accueillant et le logement est magnifique."
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 111,
+    "bedrooms": 2,
+    "beds": 3,
+    "bathrooms": 2
   },
   {
     "id": "ba55a0cc",
@@ -394,7 +875,45 @@
       "Micro-Ondes",
       "Parking"
     ],
-    "tags": ["Nature", "Groupe", "Maison"]
+    "tags": [
+      "Nature",
+      "Groupe",
+      "Maison"
+    ],
+    "price_per_night": 242,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 3,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      },
+      {
+        "user": "Marc Leclerc",
+        "rating": 4,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 83,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "1e181317",
@@ -423,7 +942,46 @@
       "Micro-Ondes",
       "Parking"
     ],
-    "tags": ["La Défense", "Loft", "Luxe"]
+    "tags": [
+      "La Défense",
+      "Loft",
+      "Luxe"
+    ],
+    "price_per_night": 136,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-06",
+      "2024-12-11",
+      "2024-12-16",
+      "2024-12-21",
+      "2024-12-26"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 5,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      },
+      {
+        "user": "John Smith",
+        "rating": 5,
+        "comment": "Propre et bien équipé, je recommande !"
+      },
+      {
+        "user": "Sarah Bernard",
+        "rating": 4,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 21,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 1
   },
   {
     "id": "1e180563",
@@ -451,7 +1009,34 @@
       "Wi-fi",
       "Micro-Ondes"
     ],
-    "tags": ["Vue Parc", "Apt de Charme"]
+    "tags": [
+      "Vue Parc",
+      "Apt de Charme"
+    ],
+    "price_per_night": 55,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-08",
+      "2024-12-15",
+      "2024-12-22",
+      "2024-12-29"
+    ],
+    "reviews": [
+      {
+        "user": "Camille Dupont",
+        "rating": 4,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 102,
+    "bedrooms": 1,
+    "beds": 1,
+    "bathrooms": 2
   },
   {
     "id": "2139a317",
@@ -467,8 +1052,50 @@
     },
     "rating": "2",
     "location": "Ile de France - Paris 20e",
-    "equipments": ["Bouilloire", "Wi-fi", "Micro-Ondes"],
-    "tags": ["Vue Parc", "Métros"]
+    "equipments": [
+      "Bouilloire",
+      "Wi-fi",
+      "Micro-Ondes"
+    ],
+    "tags": [
+      "Vue Parc",
+      "Métros"
+    ],
+    "price_per_night": 217,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-06",
+      "2024-12-11",
+      "2024-12-16",
+      "2024-12-21",
+      "2024-12-26"
+    ],
+    "reviews": [
+      {
+        "user": "John Smith",
+        "rating": 5,
+        "comment": "L'hôte est très accueillant et le logement est magnifique."
+      },
+      {
+        "user": "Alice Petit",
+        "rating": 4,
+        "comment": "Bon rapport qualité-prix, mais le quartier peut être un peu bruyant."
+      },
+      {
+        "user": "Marc Leclerc",
+        "rating": 3,
+        "comment": "Parfait pour un week-end en amoureux, très cosy !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 75,
+    "bedrooms": 1,
+    "beds": 2,
+    "bathrooms": 2
   },
   {
     "id": "6ff132c6",
@@ -493,7 +1120,35 @@
       "Wi-fi",
       "Micro-Ondes"
     ],
-    "tags": ["Studio", "Charmant", "13e"]
+    "tags": [
+      "Studio",
+      "Charmant",
+      "13e"
+    ],
+    "price_per_night": 124,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 5,
+        "comment": "Super séjour, l'appartement est propre et très bien situé !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux interdits"
+    ],
+    "area": 115,
+    "bedrooms": 3,
+    "beds": 3,
+    "bathrooms": 2
   },
   {
     "id": "cb02d69b",
@@ -516,6 +1171,39 @@
       "Frigo",
       "Baignoire"
     ],
-    "tags": ["Louvre", "Marais", "Rivoli"]
+    "tags": [
+      "Louvre",
+      "Marais",
+      "Rivoli"
+    ],
+    "price_per_night": 256,
+    "available_dates": [
+      "2024-12-01",
+      "2024-12-07",
+      "2024-12-13",
+      "2024-12-19",
+      "2024-12-25"
+    ],
+    "reviews": [
+      {
+        "user": "Alice Petit",
+        "rating": 4,
+        "comment": "Propre et bien équipé, je recommande !"
+      },
+      {
+        "user": "Alice Petit",
+        "rating": 5,
+        "comment": "Propre et bien équipé, je recommande !"
+      }
+    ],
+    "rules": [
+      "Non-fumeur",
+      "Pas de fêtes",
+      "Animaux autorisés sous conditions"
+    ],
+    "area": 40,
+    "bedrooms": 2,
+    "beds": 1,
+    "bathrooms": 1
   }
 ]
