@@ -10,14 +10,14 @@ export const FooterWrapper = styled.footer`
   padding-top: 30px;
 `;
 
-export const FooterTop = styled.div`
+export const FooterContainer = styled.div`
   width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 50px 0;
 `;
 
-export const FooterTopBloc = styled.div`
+export const FooterBloc = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,7 +44,7 @@ export const FooterTopBloc = styled.div`
   }
 `;
 
-export const FooterBottom = styled.div`
+export const FooterCopy = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ export const FooterBottom = styled.div`
   padding: 24px 0;
 `;
 
-export const FooterBottomBloc = styled.div`
+export const FooterBlocBottom = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
@@ -67,7 +67,9 @@ export const FooterBottomBloc = styled.div`
     gap: 8px;
 
     > li {
-      color: ${({ theme }) => theme.colors.white};
+      > a {
+        color: ${({ theme }) => theme.colors.white};
+      }
     }
   }
 `;

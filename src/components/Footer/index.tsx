@@ -1,14 +1,14 @@
 import React from 'react';
-import { FooterBottom, FooterBottomBloc, FooterTop, FooterTopBloc, FooterWrapper } from './style';
 import { Link } from 'react-router-dom';
 import footerLinks from '../../data/footer_links.json';
+import { FooterBloc, FooterBlocBottom, FooterContainer, FooterCopy, FooterWrapper } from './style';
 
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
-      <FooterTop>
+      <FooterContainer>
         {footerLinks.map((element, index) => (
-          <FooterTopBloc key={index}>
+          <FooterBloc key={index}>
             <h2>{element.title}</h2>
             <ul>
               {element.links.map((link, index) => (
@@ -17,30 +17,30 @@ const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
-          </FooterTopBloc>
+          </FooterBloc>
         ))}
-      </FooterTop>
-      <FooterBottom>
-        <FooterBottomBloc>
+      </FooterContainer>
+      <FooterCopy>
+        <FooterBlocBottom>
           <p>© 2024 Kaza, Inc.</p>
           <ul>
-            <li>Confidentialité</li>
-            <li>Conditions générales</li>
-            <li>Plan du site</li>
-            <li>Fonctionnement du site</li>
-            <li>Info sur l'entreprise</li>
+            <li><Link to={'/'}>Confidentialité</Link> </li>
+            <li><Link to={'/'}>Conditions générales</Link></li>
+            <li><Link to={'/'}>Plan du site</Link></li>
+            <li><Link to={'/'}>Fonctionnement du site</Link></li>
+            <li><Link to={'/'}>Info sur l'entreprise</Link></li>
           </ul>
-        </FooterBottomBloc>
-        <FooterBottomBloc>
+        </FooterBlocBottom>
+        <FooterBlocBottom>
           <button>Français</button>
           <button>Euro</button>
           <ul>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
+            <li><Link to={'/'}>Instagram</Link></li>
+            <li><Link to={'/'}>Facebook</Link></li>
+            <li><Link to={'/'}>Twitter</Link></li>
           </ul>
-        </FooterBottomBloc>
-      </FooterBottom>
+        </FooterBlocBottom>
+      </FooterCopy>
     </FooterWrapper>
   );
 };
