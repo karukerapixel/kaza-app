@@ -8,6 +8,11 @@ type Housing = {
   title: string;
   location: string;
   cover: string;
+  host: {
+    name: string
+  }
+  available_dates: string;
+  price_per_night: string;
 };
 
 const Gallery: React.FC = () => {
@@ -18,8 +23,10 @@ const Gallery: React.FC = () => {
           <GalleryListItem key={housing.id}>
             <Link to={`/housings/${housing.id}`}>
               <img src={housing.cover} alt={`Couverture de : ${housing.title}`} />
-              <h2>{housing.title}</h2>
-              <p>{housing.location}</p>
+              <h2>{housing.location}</h2>
+              <p>Hôte : {housing.host.name.split(" ")[0]}</p>
+              <p>{housing.available_dates[0]}</p>
+              <span>{housing.price_per_night}€ par nuit</span>
             </Link>
           </GalleryListItem>
         ))}

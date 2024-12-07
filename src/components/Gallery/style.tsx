@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const GalleryWrapper = styled.section`
   width: 100%;
@@ -17,7 +17,7 @@ export const GalleryList = styled.ul`
 
 export const GalleryListItem = styled.li`
   width: 100%;
-  height: 350px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -27,7 +27,7 @@ export const GalleryListItem = styled.li`
 
     > img {
       width: 100%;
-      height: 85%;
+      height: 75%;
       border-radius: 5px;
     }
 
@@ -36,7 +36,12 @@ export const GalleryListItem = styled.li`
     }
 
     > p {
-      color: #aba8a8;
+      font-weight: 400; 
+      color: ${({theme}) => theme.colors.tertiary};
+    }
+
+    > span {
+      font-weight: 700; 
     }
   }
 `;
