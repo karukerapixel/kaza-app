@@ -7,9 +7,10 @@ export const GlobalStyle = createGlobalStyle`
 
   * {
     font-size: 14px;
-    font-family: "Inter", sans-serif;
-    color: ${({ theme }) => theme.colors.black};
+    font-family: "Roboto", sans-serif;
+    color: ${({ theme }) => theme.colors.secondary};
     text-decoration: none;
+    line-height: 1.4;
     border: none;
     box-sizing: border-box;
     list-style-type: none;
