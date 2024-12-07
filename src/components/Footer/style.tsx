@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-color: ${(props) => props.theme.colors.black};
+  background-color: ${(props) => props.theme.colors.secondary};
   padding-top: 30px;
 `;
 
@@ -23,6 +23,7 @@ export const FooterTopBloc = styled.div`
   justify-content: flex-start;
 
   > h2 {
+    font-size: 1.1rem;
     color: ${({ theme }) => theme.colors.white};
   }
 
@@ -33,7 +34,12 @@ export const FooterTopBloc = styled.div`
     margin-top: 16px;
 
     > li {
-      color: ${({ theme }) => theme.colors.white};
+      display: flex;
+
+      > a {
+        color: ${({ theme }) => theme.colors.white};
+        padding: 4px 0;
+      }
     }
   }
 `;

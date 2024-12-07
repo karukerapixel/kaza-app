@@ -1,44 +1,28 @@
 import React from 'react';
 import { FooterBottom, FooterBottomBloc, FooterTop, FooterTopBloc, FooterWrapper } from './style';
+import { Link } from 'react-router-dom';
+import footerLinks from '../../data/footer_links.json';
 
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <FooterTop>
-        <FooterTopBloc>
-          <h2>Assistance</h2>
-          <ul>
-            <li>Centre d'aide</li>
-            <li>Assistance handicap</li>
-            <li>Options d'annulation</li>
-            <li>J'ai un problème de voisinage</li>
-          </ul>
-        </FooterTopBloc>
-        <FooterTopBloc>
-          <h2>Accueil des voyageurs</h2>
-          <ul>
-            <li>Mettez votre logement sur Kaza</li>
-            <li>Ressource pour les hôtes</li>
-            <li>Forum de la communauté</li>
-            <li>Hébergement responsable</li>
-            <li>Participez à un cours gratuit sur l'accueil des voyageurs</li>
-            <li>Trouver un co-hôte</li>
-          </ul>
-        </FooterTopBloc>
-        <FooterTopBloc>
-          <h2>Airbnb</h2>
-          <ul>
-            <li>Newsroom</li>
-            <li>Nouvelles fonctionnalités</li>
-            <li>Carrières</li>
-            <li>Investisseurs</li>
-            <li>Cartes cadeaux</li>
-          </ul>
-        </FooterTopBloc>
+        {footerLinks.map((element, index) => (
+          <FooterTopBloc key={index}>
+            <h2>{element.title}</h2>
+            <ul>
+              {element.links.map((link, index) => (
+                <li key={index}>
+                  <Link to={link.url}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </FooterTopBloc>
+        ))}
       </FooterTop>
       <FooterBottom>
         <FooterBottomBloc>
-          <p>© 2024 Airbnb, Inc.</p>
+          <p>© 2024 Kaza, Inc.</p>
           <ul>
             <li>Confidentialité</li>
             <li>Conditions générales</li>
