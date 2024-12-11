@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { CarouselButton, CarouselWrapper } from './style';
+import { CarouselButton, CarouselPictures, CarouselWrapper } from './style';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 type CarouselProps = {
@@ -46,24 +46,24 @@ const Carousel: React.FC<CarouselProps> = ({ pictures = [] }) => {
       {doNotDisplay && (
         <CarouselButton
           type="button"
-          title='previous'
+          role="previous"
           onClick={() => handleClick('previous')}
           style={{ left: '5%' }}
         >
           <FiChevronLeft />
         </CarouselButton>
       )}
-      
+
       {pictures.map(
         (picture, index) =>
           currentPicture === index && (
-            <img src={picture} alt={`${index}`} key={index} />
+            <CarouselPictures src={picture} alt={`${index}`} key={index} />
           )
       )}
       {doNotDisplay && (
         <CarouselButton
           type="button"
-          title='next'
+          role="next"
           onClick={() => handleClick('next')}
           style={{ right: '5%' }}
         >
@@ -75,4 +75,3 @@ const Carousel: React.FC<CarouselProps> = ({ pictures = [] }) => {
 };
 
 export default Carousel;
-

@@ -24,7 +24,6 @@ const Gallery: React.FC = () => {
             <Link to={`/housings/${housing.id}`}>
               <img src={housing.cover} alt={`Couverture de : ${housing.title}`} />
               <h2>{housing.location}</h2>
-              <p>Hôte : {housing.host.name.split(" ")[0]}</p>
               <p>{housing.available_dates[0]}</p>
               <span>{housing.price_per_night}€ par nuit</span>
             </Link>
