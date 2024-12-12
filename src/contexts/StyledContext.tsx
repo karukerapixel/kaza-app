@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     primary: '#ff6060',
     secondary: '#182026',
     tertiary: '#b9b9b9',
+    accent: '#f7f7f7',
     white: 'white',
   },
 };
