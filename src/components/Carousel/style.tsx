@@ -5,13 +5,13 @@ export const CarouselWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 24px;
+  margin-top: 14px;
+`;
 
-  > img {
-    width: 100%;
-    height: 60vh;
-    border-radius: 5px;
-  }
+export const CarouselPictures = styled.img`
+  width: 100%;
+  height: 60vh;
+  border-radius: 5px;
 `;
 
 export const CarouselButton = styled.button`
