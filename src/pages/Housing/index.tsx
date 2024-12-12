@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { HousingBlocLeft, HousingBlocRight, HousingContainer, HousingDropdowns } from './style';
-import housings from '../../data/housings.json';
-
+import { TbHeart, TbShare } from 'react-icons/tb';
+import {
+  HousingContent,
+  HousingContentBloc,
+  HousingDropdowns,
+  HousingHeader,
+  HousingHeaderButtons,
+} from './style';
 import Carousel from '../../components/Carousel';
 import Dropdown from '../../components/Dropdown';
 import Rating from '../../components/Rating';
+import housings from '../../data/housings.json';
 
 // Define the structure of a housing object
 interface HousingData {
@@ -35,33 +41,45 @@ const Housing: React.FC = () => {
 
   // Display a message if no housing is found
   if (!data) {
-    return <div>Housing Not Find.</div>;
+    return <div>Housing Not Found</div>;
   }
 
   return (
     <>
+      <HousingHeader>
+        <h1>{data.title}</h1>
+        <HousingHeaderButtons>
+          <button>
+            <TbShare />
+            <span>Partager</span>
+          </button>
+          <button>
+            <TbHeart />
+            <span>Enregistrer</span>
+          </button>
+        </HousingHeaderButtons>
+      </HousingHeader>
 
       <Carousel pictures={data.pictures} />
 
-      <HousingContainer>
-        <HousingBlocLeft>
-          <h2>{data.title}</h2>
-          <p>{data.location}</p>
+      <HousingContent>
+        <HousingContentBloc>
+          <h2>{data.location}</h2>
           <ul>
             {data.tags.map((tag, index) => (
-              <li key={index}>{tag}</li> // Render tags as a list
+              <li key={index}>{tag}</li>
             ))}
           </ul>
-        </HousingBlocLeft>
+        </HousingContentBloc>
 
-        <HousingBlocRight>
+        <HousingContentBloc style={{ alignItems: 'end' }}>
           <div>
-            <span>{data.host.name}</span> {/* Display the host's name */}
-            <img src={data.host.picture} alt={`profil de ${data.host.name}`} /> {/* Host profile picture */}
+            <span>{data.host.name}</span>
+            <img src={data.host.picture} alt={`profil de ${data.host.name}`} />
           </div>
-          <Rating score={data.rating} /> {/* Display the rating */}
-        </HousingBlocRight>
-      </HousingContainer>
+          <Rating score={data.rating} />
+        </HousingContentBloc>
+      </HousingContent>
 
       <HousingDropdowns>
         <Dropdown heading={'description'} content={<p>{data.description}</p>} />
@@ -70,7 +88,7 @@ const Housing: React.FC = () => {
           content={
             <ul>
               {data.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li> // Render equipment list
+                <li key={index}>{equipment}</li>
               ))}
             </ul>
           }
@@ -81,4 +99,3 @@ const Housing: React.FC = () => {
 };
 
 export default Housing;
-

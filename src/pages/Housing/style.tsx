@@ -1,24 +1,54 @@
 import styled from 'styled-components';
 
-export const HousingContainer = styled.section`
+export const HousingHeader = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  > h1 {
+    font-size: 1.9rem;
+  }
+`;
+
+export const HousingHeaderButtons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  > button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    grid-gap: 4px;
+
+    > svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    > span {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+`;
+
+export const HousingContent = styled.section`
   width: 90%;
   display: flex;
   justify-content: space-between;
   margin: 24px 0;
 `;
 
-export const HousingBloc = styled.div`
+export const HousingContentBloc = styled.div`
+  height: 100px;
   display: flex;
   flex-direction: column;
-`;
+  justify-content: space-between;
 
-export const HousingBlocLeft = styled(HousingBloc)`
   > h2 {
     font-size: 2rem;
-  }
-
-  > p {
-    margin-bottom: 12px;
   }
 
   > ul {
@@ -32,11 +62,6 @@ export const HousingBlocLeft = styled(HousingBloc)`
       padding: 5px 10px;
     }
   }
-`;
-
-export const HousingBlocRight = styled(HousingBloc)`
-  align-items: end;
-  justify-content: space-between;
 
   > div {
     display: flex;
