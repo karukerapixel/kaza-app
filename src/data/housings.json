@@ -10,7 +10,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
     ],
-    "description": "Un charmant appartement situé au cœur de Lyon, Rhône-Alpes, France. Parfait pour se détendre après une journée de découverte, avec un accès rapide aux transports et aux attractions locales.",
+    "description": "Un charmant appartement situé au cœur de Lyon. Parfait pour se détendre après une journée de découverte, avec un accès rapide aux transports et aux attractions locales.",
     "host": {
       "name": "Nathalie Jean",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
@@ -50,7 +50,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
     ],
-    "description": "Profitez d'un appartement moderne et spacieux situé à Nantes, Pays de la Loire, France. Idéal pour les familles ou les voyages d'affaires, avec un accès rapide aux commerces et aux attractions locales.",
+    "description": "Profitez d'un appartement moderne et spacieux situé à Nantes. Idéal pour les familles ou les voyages d'affaires, avec un accès rapide aux commerces et aux attractions locales.",
     "host": {
       "name": "Della Case",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -104,7 +104,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
     ],
-    "description": "Découvrez le charme d'un studio élégant et moderne situé au cœur de Lille, Hauts-de-France, France. Idéal pour explorer les Buttes Chaumont locales et profiter de toutes les commodités nécessaires pour un séjour inoubliable.",
+    "description": "Découvrez le charme d'un studio élégant et moderne situé au cœur de Lille. Idéal pour explorer les Buttes Chaumont locales et profiter de toutes les commodités nécessaires pour un séjour inoubliable.",
     "host": {
       "name": "Franck Maher",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
@@ -180,7 +180,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
     ],
-    "description": "Vivez une expérience unique dans cet appartement de standing situé à Strasbourg, Grand Est, France. À quelques pas de la Petite France, profitez d'un confort inégalé et de toutes les commodités modernes.",
+    "description": "Vivez une expérience unique dans cet appartement de standing situé à Strasbourg. À quelques pas de la Petite France, profitez d'un confort inégalé et de toutes les commodités modernes.",
     "host": {
       "name": "Franck Maher",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
@@ -214,7 +214,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-4.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-5.jpg"
     ],
-    "description": "Imprégnez-vous de l'essence artistique de Toulouse, Occitanie, France dans ce studio d'artiste unique. Idéalement situé pour explorer la culture locale, tout en profitant du confort moderne et du charme historique.",
+    "description": "Imprégnez-vous de l'essence artistique de Toulouse, dans ce studio d'artiste unique. Idéalement situé pour explorer la culture locale, tout en profitant du confort moderne et du charme historique.",
     "host": {
       "name": "Line Rolland",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-3.jpg"
@@ -246,7 +246,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-3.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-4.jpg"
     ],
-    "description": "Découvrez l'accessibilité et le confort dans ce studio abordable situé à Rennes, Bretagne, France. Proche des transports et des sites touristiques majeurs, idéal pour les voyageurs à petit budget.",
+    "description": "Découvrez l'accessibilité et le confort dans ce studio abordable. Proche des transports et des sites touristiques majeurs, idéal pour les voyageurs à petit budget.",
     "host": {
       "name": "Hugo Perrier",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
