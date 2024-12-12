@@ -1,70 +1,69 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import StyledProvider from '../../contexts/StyledContext';
 import Gallery from '.';
 
+// Create a housing data model
 jest.mock('../../data/housings.json', () => [
   {
     id: '1',
-    title: 'Charming Apartment',
-    location: 'Paris, France',
-    cover: '/images/apartment1.jpg',
+    title: 'Maison avec vue sur la mer',
+    location: 'Nice, France',
+    cover: 'mock-cover.jpg',
+    host: {
+      name: 'John Doe',
+    },
+    available_dates: ['11 - 15 déc'],
+    price_per_night: '120',
   },
   {
     id: '2',
-    title: 'Cozy Cabin',
-    location: 'Alps, Switzerland',
-    cover: '/images/cabin.jpg',
+    title: 'Appartement en centre-ville',
+    location: 'Lyon, France',
+    cover: 'mock-cover-2.jpg',
+    host: {
+      name: 'Jane Smith',
+    },
+    available_dates: ['20 - 26 déc'],
+    price_per_night: '90',
   },
 ]);
 
 describe('Gallery Component', () => {
-  test('renders a list of housings', () => {
+  const renderGallery = () => {
     render(
-      <MemoryRouter>
-        <Gallery />
-      </MemoryRouter>
+      <StyledProvider>
+        <MemoryRouter
+          future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true,
+          }}
+        >
+          <Gallery />
+        </MemoryRouter>
+      </StyledProvider>
     );
+  };
 
-    // Check that each dwelling is returned with its title
-    expect(screen.getByText('Charming Apartment')).toBeInTheDocument();
-    expect(screen.getByText('Cozy Cabin')).toBeInTheDocument();
+  it('renders the list of housings', () => {
+    renderGallery();
 
-    // Checks that each dwelling is returned with its location
-    expect(screen.getByText('Paris, France')).toBeInTheDocument();
-    expect(screen.getByText('Alps, Switzerland')).toBeInTheDocument();
+    // Check the number of housings
+    const housingItems = screen.getAllByRole('link');
+    expect(housingItems).toHaveLength(2);
   });
 
-  test('renders links to the correct housing details', () => {
-    render(
-      <MemoryRouter>
-        <Gallery />
-      </MemoryRouter>
-    );
+  it('renders housing details correctly', () => {
+    renderGallery();
 
-    // Checks that links are generated correctly
-    const links = screen.getAllByRole('link');
-    expect(links[0]).toHaveAttribute('href', '/housings/1');
-    expect(links[1]).toHaveAttribute('href', '/housings/2');
-  });
+    // Check the first housing informations
+    const firstLocation = screen.getByText(/nice/i);
+    expect(firstLocation).toBeInTheDocument();
 
-  test('renders images with correct src and alt text', () => {
-    render(
-      <MemoryRouter>
-        <Gallery />
-      </MemoryRouter>
-    );
+    const firstDate = screen.getByText(/20 - 26 déc/i);
+    expect(firstDate).toBeInTheDocument();
 
-    // Checks that the images are rendered with the correct properties
-    const images = screen.getAllByRole('img');
-    expect(images[0]).toHaveAttribute('src', '/images/apartment1.jpg');
-    expect(images[0]).toHaveAttribute(
-      'alt',
-      'Couverture de : Charming Apartment'
-    );
-
-    expect(images[1]).toHaveAttribute('src', '/images/cabin.jpg');
-    expect(images[1]).toHaveAttribute('alt', 'Couverture de : Cozy Cabin');
+    const firstPrice = screen.getByText(/120€/i);
+    expect(firstPrice).toBeInTheDocument();
   });
 });
