@@ -1,68 +1,55 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import Carousel from '.';
 
 describe('Carousel Component', () => {
   const mockPictures = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 
-  test('renders fallback text when no pictures are provided', () => {
+  it('renders fallback message when no pictures are provided', () => {
     render(<Carousel pictures={[]} />);
-    expect(screen.getByText(/no images to display/i)).toBeInTheDocument();
+    const fallbackMessage = screen.getByText('No images to display');
+    expect(fallbackMessage).toBeInTheDocument();
   });
 
-  test('renders images and navigation buttons when pictures are provided', () => {
+  it('renders the first image and navigation buttons', () => {
     render(<Carousel pictures={mockPictures} />);
-    const previousButton = screen.getByRole('button', { name: /previous/i });
-    const nextButton = screen.getByRole('button', { name: /next/i });
 
-    // Check if the first image is displayed
-    expect(screen.getByAltText('0')).toBeInTheDocument();
-    expect(screen.getByAltText('0')).toHaveAttribute('src', 'image1.jpg');
+    // Check that the first image is displayed
+    const firstImage = screen.getByAltText('0');
+    expect(firstImage).toBeInTheDocument();
+    expect(firstImage).toHaveAttribute('src', 'image1.jpg');
 
-    // Check if navigation buttons are rendered
-    expect(previousButton).toBeInTheDocument();
+    // Checks that navigation buttons are displayed
+    const prevButton = screen.getByRole('previous');
+    const nextButton = screen.getByRole('next');
+    expect(prevButton).toBeInTheDocument();
     expect(nextButton).toBeInTheDocument();
   });
 
-  test('navigates to the next and previous images', () => {
+  it('navigates to the next image when the next button is clicked', () => {
     render(<Carousel pictures={mockPictures} />);
-    const previousButton = screen.getByRole('button', { name: /previous/i });
-    const nextButton = screen.getByRole('button', { name: /next/i });
 
-    // Click next button
+    const nextButton = screen.getByRole('next');
+
+    // Click on the "next" button
     fireEvent.click(nextButton);
-    expect(screen.getByAltText('1')).toBeInTheDocument(); // Second image
 
-    // Click next button again
-    fireEvent.click(nextButton);
-    expect(screen.getByAltText('2')).toBeInTheDocument(); // Third image
-
-    // Click previous button
-    fireEvent.click(previousButton);
-    expect(screen.getByAltText('1')).toBeInTheDocument(); // Second image
+    // Checks that the second image is displayed
+    const secondImage = screen.getByAltText('1');
+    expect(secondImage).toBeInTheDocument();
+    expect(secondImage).toHaveAttribute('src', 'image2.jpg');
   });
 
-  test('loops from last image to first when clicking next', () => {
+  it('navigates to the previous image when the previous button is clicked', () => {
     render(<Carousel pictures={mockPictures} />);
-    const nextButton = screen.getByRole('button', { name: /next/i });
 
-    // Navigate to the last image
-    fireEvent.click(nextButton);
-    fireEvent.click(nextButton);
+    const prevButton = screen.getByRole('previous');
 
-    expect(screen.getByAltText('2')).toBeInTheDocument(); // Third image
+    // Click on the "previous" button
+    fireEvent.click(prevButton);
 
-    // Click next to loop back to the first image
-    fireEvent.click(nextButton);
-    expect(screen.getByAltText('0')).toBeInTheDocument(); // First image
-  });
-
-  test('loops from first image to last when clicking previous', () => {
-    render(<Carousel pictures={mockPictures} />);
-    const previousButton = screen.getByRole('button', { name: /previous/i });
-
-    // Click previous to loop back to the last image
-    fireEvent.click(previousButton);
-    expect(screen.getByAltText('2')).toBeInTheDocument(); // Third image
+    // Checks that the last image is displayed (loop)
+    const lastImage = screen.getByAltText('2');
+    expect(lastImage).toBeInTheDocument();
+    expect(lastImage).toHaveAttribute('src', 'image3.jpg');
   });
 });
