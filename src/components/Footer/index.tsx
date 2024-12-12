@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import footerLinks from '../../data/footer_links.json';
 import { FooterBloc, FooterBlocBottom, FooterContainer, FooterCopy, FooterWrapper } from './style';
+import footerLinks from '../../data/footerLinks.json';
 
 const Footer: React.FC = () => {
   return (
