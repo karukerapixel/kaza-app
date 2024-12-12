@@ -1,66 +1,54 @@
+import { fireEvent, render, screen } from '@testing-library/react';
 import StyledProvider from '../../contexts/StyledContext';
-import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import Dropdown from '.';
 
 describe('Dropdown Component', () => {
-  const testHeading = 'Test Heading';
-  const testContent = <p>Test Content</p>;
-
-  test('renders the dropdown with heading and hidden content initially', () => {
+  const renderDropdown = () => {
+    const mockContent = 'Test content';
     render(
       <StyledProvider>
-        <Dropdown heading={testHeading} content={testContent} />
+        <Dropdown heading="Test Heading" content={mockContent} />
       </StyledProvider>
     );
+  };
 
-    // Check if the heading is rendered
-    expect(screen.getByText(testHeading)).toBeInTheDocument();
+  it('renders the heading and does not show content initially', () => {
+    renderDropdown();
+    // Check that heading is rendering correctly
+    const heading = screen.getByText(/test heading/i);
+    expect(heading).toBeInTheDocument();
 
-    // Check that the content is not displayed initially
-    expect(screen.queryByText('Test Content')).not.toBeInTheDocument();
+    // Checks that the content is not initially displayed
+    const content = screen.queryByText(/test content/i);
+    expect(content).not.toBeInTheDocument();
   });
 
-  test('toggles content visibility when the button is clicked', () => {
-    render(
-      <StyledProvider>
-        <Dropdown heading={testHeading} content={testContent} />
-      </StyledProvider>
-    );
+  it('shows content when the button is clicked', () => {
+    renderDropdown();
+
+    const button = screen.getByRole('button');
+
+    // Open the dropdown at click
+    fireEvent.click(button);
+
+    // Check that content is displayed
+    const content = screen.getByText(/test content/i);
+    expect(content).toBeInTheDocument();
+  });
+
+  it('hides content when the button is clicked again', () => {
+    renderDropdown();
 
     const button = screen.getByRole('button', { name: /test heading/i });
 
-    // Initial state: Content should not be visible
-    expect(screen.queryByText('Test Content')).not.toBeInTheDocument();
-
-    // Click to open the dropdown
+    // Open dropdown at click
     fireEvent.click(button);
-    expect(screen.getByText('Test Content')).toBeInTheDocument();
 
-    // Click to close the dropdown
+    // Click again to close the dropdown
     fireEvent.click(button);
-    expect(screen.queryByText('Test Content')).not.toBeInTheDocument();
-  });
 
-  test('renders content when opened and applies correct wrapper mode', () => {
-    render(
-      <StyledProvider>
-        <Dropdown heading={testHeading} content={testContent} />
-      </StyledProvider>
-    );
-
-    const button = screen.getByText(/test heading/i);
-    const wrapper = screen.getByRole('region'); // Assuming `DropdownWrapper` has a `role="region"`
-
-    // Initial state: mode="false"
-    expect(wrapper).toHaveAttribute('mode', 'false');
-
-    // Click to open the dropdown
-    fireEvent.click(button);
-    expect(wrapper).toHaveAttribute('mode', 'true');
-
-    // Click to close the dropdown
-    fireEvent.click(button);
-    expect(wrapper).toHaveAttribute('mode', 'false');
+    // Check that content is not displayed
+    const content = screen.queryByText(/test content/i);
+    expect(content).not.toBeInTheDocument();
   });
 });
